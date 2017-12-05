@@ -5,15 +5,15 @@ public class face
 	public static void main(String[] args) 
 	{
 		
-		int [][] x = new int [3][5];
-		x[0][1] = 3;
-		x[0][3] = 3;
-		x[1][2] = 4;
-		x[1][0] = 1;
-		x[1][4] = 1;
-		x[2][1] = 1;
-		x[2][2] = 1;
-		x[2][3] = 1;
+		int [][] x = new int [10][21];
+		x[1][17] = 3;
+		x[1][5] = 3;
+		x[3][11] = 4;
+		x[5][11] = 1;x[5][10] = 1;x[5][12] = 1;x[5][9] = 1;x[5][13] = 1;
+		x[6][8] = 1;x[6][14] = 1;
+		x[6][7] = 1;x[6][15] = 1;
+		x[6][6] = 1;x[6][16] = 1;
+		
 	
 		fprinter(x);
 	}
@@ -25,7 +25,12 @@ public class face
 		{
 			for(int j = 0; j < x[i].length; j++)
 			{
-			System.out.print(x[i][j]);
+				if(x[i][j] == 0)
+				{
+					System.out.print(" ");
+				}
+			
+				else System.out.print(x[i][j]);
 			}
 			System.out.println();
 		}
